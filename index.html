@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="icon" href="./images/Audio-icon.png">
+    <title>Audio</title>
+</head>
+<body>
+    <div class="audioContainer">
+        <audio id="audioPlayer">
+            <source src="./audio/Cartoon - On & On.mp3" type="audio/mp3">
+        </audio>
+
+        <div class="controls">
+            <img class="btn" onclick="play()" src="./images/Play.png">
+            <img class="btn" onclick="pause()" src="./images/Pause.png">
+            <img class="btn" onclick="stop()" src="./images/Stop.png">
+            <img class="btn" onclick="back15s()" src="./images/Back.png">
+            <img class="btn" onclick="foward15s()" src="./images/Foward.png">
+            <img class="btn" onclick="backVolume()" src="./images/Volume.png">
+            <img class="btn" onclick="mute()" src="./images/Mute.png">
+        </div>
+
+        <div class="timeAudio">
+            <span id="currentTime">00:00</span>
+            <span>/</span>
+            <span id="totalTime">03:27</span>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
